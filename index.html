@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-watch</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="headings">
+                <h4><i class="fa-solid fa-hourglass" style="color: #3f7fee;"></i>Timer</h4>
+           
+                <button><i class="fa-solid fa-check" style="color: #3475e5;"></i>StopWatch</button>
+           
+            
+                <i class="fa-solid fa-volume-high" style="color: #3a76df;"></i>
+        </div>
+
+        <div class="output" id="time">0</div>
+
+        <div class="flex">
+            <button class="start" id="butn" onclick="timer()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+            <button class="stop" id="stp" onclick="stop()"><i class="fa-solid fa-pause"></i></button>
+            <button class="reset" onclick="reset()"><i class="fa-solid fa-rotate-left"></i></button>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
